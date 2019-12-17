@@ -35,7 +35,7 @@
     </nav>
     <div class="groupPageContainer">
       <h1><?php echo $group->Name ?></h1>
-      <h4><?php echo $group->Description ?></h4>
+      <p><?php echo $group->Description ?></p>
       <div class="table-responsive-sm">
   			<table class="table table-bordered">
         <tr>
@@ -52,13 +52,12 @@
           </tr>
         <?php } ?>
         </table>
-        <?php if ($isMember) { ?>
-          <a class="btn btn-danger" href="./delete.php?groupId=<?php echo $group->Id ?>&collectorRegistration=<?php echo $userId ?>">Sair</a>
-        <?php } else { ?>
-          <a class="btn btn-success" href="./insert.php?groupId=<?php echo $group->Id ?>&collectorRegistration=<?php echo $userId ?>">Participar</a>
-        <?php } ?>
       </div>
-
+      <?php if ($isMember) { ?>
+        <a class="btn btn-danger" href="./delete.php?groupId=<?php echo $group->Id ?>&collectorRegistration=<?php echo $userId ?>">Sair</a>
+      <?php } else { ?>
+        <a class="btn btn-success" href="./insert.php?groupId=<?php echo $group->Id ?>&collectorRegistration=<?php echo $userId ?>">Participar</a>
+      <?php } ?>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
