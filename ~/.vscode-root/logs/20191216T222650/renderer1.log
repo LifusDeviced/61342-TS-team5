@@ -1,0 +1,2 @@
+[2019-12-16 22:29:33.932] [renderer1] [error] Error: [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/opt/lampp/htdocs/61342-TS-team5/.vscode'
+[2019-12-16 22:29:33.932] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/opt/lampp/htdocs/61342-TS-team5/.vscode'

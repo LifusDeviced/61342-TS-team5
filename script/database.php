@@ -17,9 +17,8 @@
         global $connection;
         $query = "SELECT * FROM Collectors";
         $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
-        $collectors = mysqli_fetch_all($result);
-        if ($collectors) {
-            return $collectors;
+        if ($result) {
+            return $result;
         } else {
             return [];
         }
@@ -42,9 +41,8 @@
         global $connection;
         $query = "SELECT * FROM Groups";
         $result = mysqli_query($connection,$query) or die(mysqli_error($connection));
-        $groups = mysqli_fetch_all($result);
-        if ($groups) {
-            return $groups;
+        if ($result) {
+            return $result;
         } else {
             return [];
         }
@@ -61,6 +59,36 @@
         } else {
             echo "Group Not Found";
         }
+    }
+
+    # Função para listar colecionadores de um grupos
+    function selectCollectorsByGroup(string $id) {
+        global $connection;
+        $query = "SELECT * FROM GroupCollectors WHERE GroupId = $id";
+        $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
+        $collectors = [];
+        while ($relation = mysqli_fetch_assoc($result)) {
+            array_push($collectors, selectCollector($relation['CollectorRegistration']));
+        }
+        return $collectors;
+    }
+
+    # Função para adicionar um colecionador a um grupo
+    function insertCollectorInGroup(string $groupId, string $collectorRegistration) {
+        echo "Oi";
+        global $connection;
+        $query = "INSERT INTO GroupCollectors (GroupId, CollectorRegistration) VALUES
+        ('$groupId', '$collectorRegistration')";
+        $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
+        header("Location: http://localhost/61342-TS-team5/");
+    }
+
+    # Função para remover um colecionador de um grupo
+    function deleteCollectorInGroup(string $groupId, string $collectorRegistration) {
+        global $connection;
+        $query = "DELETE FROM GroupCollectors WHERE GroupId=$groupId AND CollectorRegistration=$collectorRegistration";
+        $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
+        header("Location: http://localhost/61342-TS-team5/");
     }
 
 ?>

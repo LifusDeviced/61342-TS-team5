@@ -1,0 +1,9 @@
+[2019-12-16 01:07:26.201] [sharedprocess] [info] main {"machineId":"78318e9920429c3e5a033b2273a51db544c88f7f6a0fe712ec35e91a5ec9be44"}
+[2019-12-16 01:07:26.618] [sharedprocess] [info] Deleted from disk esbenp.prettier-vscode /home/lifusdeviced/.vscode/extensions/esbenp.prettier-vscode-3.11.0
+[2019-12-16 01:07:28.772] [sharedprocess] [info] Installing extension: esbenp.prettier-vscode
+[2019-12-16 01:07:30.966] [sharedprocess] [info] Downloaded extension: esbenp.prettier-vscode /tmp/99e31183-df66-4691-bac9-a596d78691f0
+[2019-12-16 01:07:31.378] [sharedprocess] [info] Extracted extension to /home/lifusdeviced/.vscode/extensions/.esbenp.prettier-vscode-3.14.0: esbenp.prettier-vscode
+[2019-12-16 01:07:31.379] [sharedprocess] [info] Renamed to /home/lifusdeviced/.vscode/extensions/esbenp.prettier-vscode-3.14.0
+[2019-12-16 01:07:31.381] [sharedprocess] [info] Installation completed. esbenp.prettier-vscode
+[2019-12-16 01:07:31.469] [sharedprocess] [info] Extensions installed successfully: esbenp.prettier-vscode
+[2019-12-16 01:08:06.191] [sharedprocess] [info] Starting to clean up unused language packs.

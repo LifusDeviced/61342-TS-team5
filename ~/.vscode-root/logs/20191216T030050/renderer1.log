@@ -1,0 +1,3 @@
+[2019-12-16 03:01:27.157] [renderer1] [warning] UNRESPONSIVE extension host, 'esbenp.prettier-vscode' took 71% of 504.317ms, saved PROFILE here: '/tmp/exthost-37b1f4.cpuprofile' [{"id":"esbenp.prettier-vscode","total":357586,"percentage":71},{"id":"gc","total":11713,"percentage":2},{"id":"program","total":47068,"percentage":9},{"id":"self","total":17442,"percentage":3},{"id":"vscode.git","total":70182,"percentage":14}]
+[2019-12-16 03:01:38.951] [renderer1] [error] Error: [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/opt/lampp/htdocs/61342-TS-team5/.vscode'
+[2019-12-16 03:01:38.951] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/opt/lampp/htdocs/61342-TS-team5/.vscode'
