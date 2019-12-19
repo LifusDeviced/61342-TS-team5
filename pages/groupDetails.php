@@ -35,7 +35,7 @@
     </nav>
     <div class="groupPageContainer">
       <h1><?php echo $group->Name ?></h1>
-      <p><?php echo $group->Description ?></p>
+      <h4><?php echo $group->Description ?></h4>
       <div class="table-responsive-sm">
   			<table class="table table-bordered">
         <tr>

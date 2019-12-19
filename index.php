@@ -45,7 +45,7 @@
 						<td><center><?php echo $group['Description']; ?></center></td>
 						<td><center><?php echo $group['CreatedAt']; ?></center></td>
 						<td><center><?php echo $group['AdminRegistration']; ?></center></td>
-						<td><center><a href="pages/groupDetails.php?groupId=<?php echo $group['Id'] ?>"><span class="btn-btn-rpimary">Go</span> </a></center></td>
+						<td><center><a href="pages/groupDetails.php?groupId=<?php echo $group['Id'] ?>"><span class="btn btn-primary">Ver</button> </a></center></td>
 					</tr>
 				<?php } ?>
 			</table>

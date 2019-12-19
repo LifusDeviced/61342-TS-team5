@@ -61,7 +61,7 @@
         }
     }
 
-    # Função para listar colecionadores de um grupos
+    # Função para listar colecionadores de um grupo
     function selectCollectorsByGroup(string $id) {
         global $connection;
         $query = "SELECT * FROM GroupCollectors WHERE GroupId = $id";
@@ -73,22 +73,47 @@
         return $collectors;
     }
 
-    # Função para adicionar um colecionador a um grupo
-    function insertCollectorInGroup(string $groupId, string $collectorRegistration) {
-        echo "Oi";
+    # Função para buscar uma relação entre colecionador e grupo
+    function selectCollectorGroup(string $groupId, string $collectorRegistration) {
         global $connection;
-        $query = "INSERT INTO GroupCollectors (GroupId, CollectorRegistration) VALUES
-        ('$groupId', '$collectorRegistration')";
+        $query = "SELECT Id FROM GroupCollectors
+        WHERE GroupId=$groupId AND CollectorRegistration=$collectorRegistration";
         $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
-        header("Location: http://localhost/61342-TS-team5/");
+        if ($result) {
+            return mysqli_fetch_object($result);
+        } else {
+            echo "CollectorGroup Not Found";
+        }
+    }
+
+    # Função para adicionar um colecionador a um grupo
+    function insertCollectorInGroup(string $groupId, string $collectorRegistration, $navigation=true, $noVerify=false) {
+        if ($noVerify) {
+            $permission = false;
+        } else {
+            $permission = selectCollectorGroup($groupId, $collectorRegistration);
+        }
+        if (!$permission) {
+            global $connection;
+            $query = "INSERT INTO GroupCollectors (GroupId, CollectorRegistration) VALUES
+            ('$groupId', '$collectorRegistration')";
+            $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
+            if ($navigation) {
+                header("Location: http://localhost/61342-TS-team5/pages/groupDetails.php?groupId=$groupId");
+            }
+        } else {
+            echo "Its already in the group";
+        }        
     }
 
     # Função para remover um colecionador de um grupo
-    function deleteCollectorInGroup(string $groupId, string $collectorRegistration) {
+    function deleteCollectorInGroup(string $groupId, string $collectorRegistration, $navigation=true) {
         global $connection;
         $query = "DELETE FROM GroupCollectors WHERE GroupId=$groupId AND CollectorRegistration=$collectorRegistration";
         $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
-        header("Location: http://localhost/61342-TS-team5/");
+        if ($navigation) {
+            header("Location: http://localhost/61342-TS-team5/pages/groupDetails.php?groupId=$groupId");
+        }
     }
 
 ?>
