@@ -1,0 +1,229 @@
+{
+  "id": "df9d5e31-c160-49b0-aec6-8a676729cbfa",
+  "version": "2.0",
+  "name": "Entrada e saida de varios grupos",
+  "url": "http://localhost/61342-TS-team5/",
+  "tests": [{
+    "id": "d381943c-2ebd-4d44-8637-5cd0a6eb8371",
+    "name": "Entrada e saida de varios grupos",
+    "commands": [{
+      "id": "14d383de-abf3-4f17-b192-e3d805e1afb7",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/61342-TS-team5/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a1540ac-3fa6-4dd9-a34a-b962d02ac132",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "791x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd165ed8-21f1-4a46-903e-3da96c744cde",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .btn-btn-rpimary",
+      "targets": [
+        ["css=tr:nth-child(2) .btn-btn-rpimary", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Go')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f48d2980-2086-42c0-bab3-f327f99edeff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Participar",
+      "targets": [
+        ["linkText=Participar", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Participar')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './insert.php?groupId=1&collectorRegistration=7')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Participar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01b957c2-4d6d-4a7c-8a76-46f0dd5ac013",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .btn-btn-rpimary",
+      "targets": [
+        ["css=tr:nth-child(3) .btn-btn-rpimary", "css:finder"],
+        ["xpath=//tr[3]/td[6]/center/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6034a81-f7a4-4e70-8b0c-e28312d76559",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Participar",
+      "targets": [
+        ["linkText=Participar", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Participar')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './insert.php?groupId=2&collectorRegistration=7')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Participar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9087fae4-d027-40ac-919a-90b4970c6cc8",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .btn-btn-rpimary",
+      "targets": [
+        ["css=tr:nth-child(4) .btn-btn-rpimary", "css:finder"],
+        ["xpath=//tr[4]/td[6]/center/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "282c4221-ae64-4b73-bbd3-7882ac9d6b28",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Participar",
+      "targets": [
+        ["linkText=Participar", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Participar')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './insert.php?groupId=3&collectorRegistration=7')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Participar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5b4e6a4-9684-43f9-897d-3e66bce87c46",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) .btn-btn-rpimary",
+      "targets": [
+        ["css=tr:nth-child(5) .btn-btn-rpimary", "css:finder"],
+        ["xpath=//tr[5]/td[6]/center/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8f7fc27-9c3d-40a5-b795-4923eda3b1bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Participar",
+      "targets": [
+        ["linkText=Participar", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Participar')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './insert.php?groupId=4&collectorRegistration=7')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Participar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fa2b39c-e77c-4042-879a-5e8f07aa6d5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .btn-btn-rpimary",
+      "targets": [
+        ["css=tr:nth-child(2) .btn-btn-rpimary", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Go')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7747f57-5216-41ba-a90c-75ce8eddf2c5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './delete.php?groupId=1&collectorRegistration=7')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90b75aee-c4d3-41e4-97e0-13f709838b44",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .btn-btn-rpimary",
+      "targets": [
+        ["css=tr:nth-child(3) .btn-btn-rpimary", "css:finder"],
+        ["xpath=//tr[3]/td[6]/center/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42563c52-6ec1-41a8-91c2-4d675b8eb555",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './delete.php?groupId=2&collectorRegistration=7')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92fa0d7f-089b-40af-9be2-f43eb8ad4b0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .btn-btn-rpimary",
+      "targets": [
+        ["css=tr:nth-child(4) .btn-btn-rpimary", "css:finder"],
+        ["xpath=//tr[4]/td[6]/center/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ebea50e-e12b-45df-a4dd-775210e5278c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './delete.php?groupId=3&collectorRegistration=7')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "874df723-fe31-4cad-aa05-8ebb0673e1fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) .btn-btn-rpimary",
+      "targets": [
+        ["css=tr:nth-child(5) .btn-btn-rpimary", "css:finder"],
+        ["xpath=//tr[5]/td[6]/center/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07847e29-68d5-499a-b7e8-b69a7baebae9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './delete.php?groupId=4&collectorRegistration=7')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f4f5a9d3-7f25-4db3-b65d-58ceabd55cae",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d381943c-2ebd-4d44-8637-5cd0a6eb8371"]
+  }],
+  "urls": ["http://localhost/61342-TS-team5/"],
+  "plugins": []
+}

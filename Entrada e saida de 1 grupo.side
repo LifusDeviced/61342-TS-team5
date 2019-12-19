@@ -1,0 +1,83 @@
+{
+  "id": "75455684-f878-4af8-8e42-3051abf1c05b",
+  "version": "2.0",
+  "name": "Entrada e saida de 1 grupo",
+  "url": "http://localhost/61342-TS-team5/",
+  "tests": [{
+    "id": "609e194a-2b59-492b-b855-80e6b4eed329",
+    "name": "Entrada e saida de 1 grupo",
+    "commands": [{
+      "id": "9854fa87-9a11-4a2b-beab-b268243cabdc",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/61342-TS-team5/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bcbfd2fd-949c-4922-a890-2e101c28e448",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "791x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66469e81-b84b-44e2-b8af-5e696511aaa0",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) .btn-btn-rpimary",
+      "targets": [
+        ["css=tr:nth-child(5) .btn-btn-rpimary", "css:finder"],
+        ["xpath=//tr[5]/td[6]/center/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44928db3-3704-47ec-ade0-71c44f87e35a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Participar",
+      "targets": [
+        ["linkText=Participar", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Participar')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './insert.php?groupId=4&collectorRegistration=7')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Participar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c96c139d-a046-4e22-8d66-087bc6a64b63",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) .btn-btn-rpimary",
+      "targets": [
+        ["css=tr:nth-child(5) .btn-btn-rpimary", "css:finder"],
+        ["xpath=//tr[5]/td[6]/center/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da3ea3ed-f104-49ea-89ec-8b50cf7b28b8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './delete.php?groupId=4&collectorRegistration=7')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "07cc10bc-5505-4db9-899c-b8d46d93f10d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["609e194a-2b59-492b-b855-80e6b4eed329"]
+  }],
+  "urls": ["http://localhost/61342-TS-team5/"],
+  "plugins": []
+}
